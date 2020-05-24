@@ -5,7 +5,7 @@ function insert(num) {
 function findValue() {  
   var str = eval(document.form.textview.value);
   if(str) {
-    document.form.textview.value = str;
+    document.form.textview.value = Number.parseFloat(str).toFixed(12);
   }
 }
 
